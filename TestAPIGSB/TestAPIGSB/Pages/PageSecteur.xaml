@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAPIGSB.Pages.PageSecteur">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvSecteurs" ItemSelected="lvSecteurs_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" HeightRequest="100">
+                                    <Label x:Name="lblIdTicket" VerticalOptions="Center" HorizontalOptions="Center"
+                                               WidthRequest="80" FontSize="20"
+                                               Text="{Binding Id}"></Label>
+                                    <Label x:Name="lblNomTicket" WidthRequest="200" VerticalOptions="Center" FontSize="20"
+                                               Text="{Binding Nom}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label>Nom du secteur</Label>
+            <Entry x:Name="txtNomSecteur"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button HorizontalOptions="Center" Text="Modifier" x:Name="btnModifier" Clicked="btnModifier_Clicked"></Button>
+                <Button HorizontalOptions="Center" Text="Ajouter" x:Name="btnAjouter" Clicked="btnAjouter_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

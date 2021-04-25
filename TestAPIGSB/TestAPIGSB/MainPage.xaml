@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAPIGSB.MainPage"
+             BackgroundColor="Green">
+    
+        <StackLayout VerticalOptions="Center" >
+        <Image Source="Vert.png" HeightRequest="40" />
+        <Frame Padding="24" CornerRadius="0">
+            <Label Text=" Bienvenue dans le Projet GSB"  HorizontalTextAlignment="Center"  TextColor="Black" FontSize="32"/>
+        </Frame>
+        <Button Text="Secteurs" x:Name="btnSecteurs" Clicked="btnSecteurs_Clicked"></Button>
+        <Button Text="Regions" x:Name="btnRegions" Clicked="btnRegions_Clicked"></Button>
+        <Button Text="Visiteurs" x:Name="btnVisiteurs" Clicked="btnVisiteurs_Clicked"></Button>
+        <Button Text="Travailler" x:Name="btnTravailler" Clicked="btnTravailler_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
